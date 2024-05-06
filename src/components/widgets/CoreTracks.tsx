@@ -45,7 +45,7 @@ const CoreTrack = () => {
                     <Link href={'/CourseContent'}><div className='mt-20 flex flex-col lg:flex-row  items-stretch gap-x-8 gap-y-6 '>
                         {CoreHeader.map((item, i) => {
                             return (
-                            <Quarterbox header={item.text} desc={item.desc} number={item.number}/>
+                            <Quarterbox key={item.number} header={item.text} desc={item.desc} number={item.number}/>
                             )
                         })}
                     </div>

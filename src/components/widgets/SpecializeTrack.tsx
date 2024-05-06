@@ -147,7 +147,7 @@ const SpecializeTrack = () => {
                         </button></Link>
                         <div className="mt-6  flex flex-col lg:flex-row  items-stretch gap-x-8 gap-y-6">
                             {selecteditemdata?.Quarters.map((item) => (
-                                <Quarterbox header={item.header} desc={item.desc}
+                                <Quarterbox key={item.number} header={item.header} desc={item.desc}
                                     number={item.number} haveborder={false}
                                 />
 
